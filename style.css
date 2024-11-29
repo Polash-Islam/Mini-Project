@@ -153,6 +153,6 @@ footer p {
 
 @media (min-width: 1024px) {
   .service-card {
-    width: 40%;
+    width: 30%;
   }
 } convert to scss 
