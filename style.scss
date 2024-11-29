@@ -1,18 +1,29 @@
+// Variables
+$primary-color: #333;
+$secondary-color: #ff6347;
+$background-light: #f4f4f4;
+$background-lighter: #f9f9f9;
+$text-color-white: white;
+$font-family-base: Arial, sans-serif;
+
+// Reset
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+// Base styles
 body {
-  font-family: Arial, sans-serif;
+  font-family: $font-family-base;
 }
 
+// Sticky Header
 .sticky-header {
   position: sticky;
   top: 0;
-  background-color: #333;
-  color: white;
+  background-color: $primary-color;
+  color: $text-color-white;
   padding: 10px 0;
   z-index: 100;
 
@@ -21,26 +32,28 @@ body {
       display: flex;
       justify-content: center;
       list-style: none;
-    }
 
-    ul li {
-      margin: 0 20px;
-    }
+      li {
+        margin: 0 20px;
 
-    ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+        a {
+          color: $text-color-white;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
 
+// Hero Section
 .hero-section {
   background: url("https://www.gameaccessibilitynexus.com/wp-content/uploads/2022/11/GOWR-LV-Header-02.jpg")
-    no-repeat center center/cover;
-  color: white;
+    no-repeat center center / cover;
+  color: $text-color-white;
   text-align: center;
   padding: 100px 20px;
+  height: 600px;
 
   .hero-content {
     h1 {
@@ -54,8 +67,8 @@ body {
     }
 
     .btn {
-      background-color: #ff6347;
-      color: white;
+      background-color: $secondary-color;
+      color: $text-color-white;
       padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
@@ -64,10 +77,11 @@ body {
   }
 }
 
+// Services Section
 .services-section {
   padding: 50px 20px;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: $background-light;
 
   h2 {
     margin-bottom: 30px;
@@ -83,7 +97,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: scale(1);
     transition: transform 0.3s ease-in-out;
-    background: slategray;
 
     &:hover {
       transform: scale(1.1);
@@ -96,13 +109,14 @@ body {
   }
 }
 
+// Card Grid Section
 .card-grid-section {
   padding: 50px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  background-color: #f9f9f9;
+  background-color: $background-lighter;
 
   .card {
     width: 250px;
@@ -111,7 +125,6 @@ body {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    background: teal;
 
     &:hover {
       transform: scale(1.05);
@@ -124,9 +137,10 @@ body {
   }
 }
 
+// Footer
 footer {
-  background-color: #333;
-  color: white;
+  background-color: $primary-color;
+  color: $text-color-white;
   text-align: center;
   padding: 20px;
 
@@ -135,10 +149,11 @@ footer {
   }
 }
 
+// Media Queries
 @media (max-width: 768px) {
   .service-card,
   .card {
-    width: 70%;
+    width: 100%;
   }
 }
 

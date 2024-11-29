@@ -16,35 +16,44 @@ body {
   padding: 10px 0;
   z-index: 100;
 }
+
 .sticky-header nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
 }
+
 .sticky-header nav ul li {
   margin: 0 20px;
 }
+
 .sticky-header nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Hero Section */
 .hero-section {
-  background: url("https://www.gameaccessibilitynexus.com/wp-content/uploads/2022/11/GOWR-LV-Header-02.jpg") no-repeat center center/cover;
+  background: url("https://www.gameaccessibilitynexus.com/wp-content/uploads/2022/11/GOWR-LV-Header-02.jpg")
+    no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
+   
 }
-.hero-section .hero-content h1 {
+
+.hero-content h1 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
-.hero-section .hero-content p {
+
+.hero-content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-.hero-section .hero-content .btn {
+
+.hero-content .btn {
   background-color: #ff6347;
   color: white;
   padding: 10px 20px;
@@ -53,16 +62,19 @@ body {
   font-weight: bold;
 }
 
+/* Services Section */
 .services-section {
   padding: 50px 20px;
   text-align: center;
   background-color: #f4f4f4;
 }
+
 .services-section h2 {
   margin-bottom: 30px;
   font-size: 2rem;
 }
-.services-section .service-card {
+
+.service-card {
   display: inline-block;
   width: 30%;
   padding: 20px;
@@ -71,16 +83,19 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
-  background: slategray;
+  background: slategrey;;
 }
-.services-section .service-card:hover {
+
+.service-card:hover {
   transform: scale(1.1);
 }
-.services-section .service-card h3 {
+
+.service-card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
+/* Card Grid Section */
 .card-grid-section {
   padding: 50px 20px;
   display: flex;
@@ -89,46 +104,55 @@ body {
   gap: 20px;
   background-color: #f9f9f9;
 }
-.card-grid-section .card {
+
+.card {
   width: 250px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  background: teal;
+  background: grey;
 }
-.card-grid-section .card:hover {
+
+.card:hover {
   transform: scale(1.05);
 }
-.card-grid-section .card h3 {
+
+.card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
+/* Footer */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 20px;
 }
+
 footer p {
   margin: 0;
 }
 
+/* Mobile first - default styles */
 @media (max-width: 768px) {
   .service-card,
   .card {
-    width: 70%;
+    width: 100%;
   }
 }
+
+/* Tablet and Desktop */
 @media (min-width: 768px) {
   .service-card {
     width: 45%;
   }
 }
+
 @media (min-width: 1024px) {
   .service-card {
     width: 40%;
   }
-}/*# sourceMappingURL=style.css.map */
+} convert to scss 
