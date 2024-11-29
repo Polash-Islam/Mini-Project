@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="sticky-header" role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#cards">Cards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section" role="region" aria-label="Hero Section">
+        <div class="hero-content">
+            <h1>Welcome to Gaming World</h1>
+            <p>Game On, Level Up!</p>
+            <a href="#services" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="services" class="services-section" role="region" aria-labelledby="services-heading">
+        <h2 id="services-heading">Our Services</h2>
+        <div class="service-card" role="article">
+            <h3>Service 1</h3>
+            <p>Gaming service 1.</p>
+        </div>
+        <div class="service-card" role="article">
+            <h3>Service 2</h3>
+            <p>Gaming service 2.</p>
+        </div>
+        <div class="service-card" role="article">
+            <h3>Service 3</h3>
+            <p>Gaming service 3.</p>
+        </div>
+    </section>
+
+    <section id="cards" class="card-grid-section" role="region" aria-labelledby="cards-heading">
+        <div class="card" role="article">
+            <h3>Card 1</h3>
+            <p>Some content here.</p>
+        </div>
+        <div class="card" role="article">
+            <h3>Card 2</h3>
+            <p>Some content here.</p>
+        </div>
+        <div class="card" role="article">
+            <h3>Card 3</h3>
+            <p>Some content here.</p>
+        </div>
+    </section>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+
+</body>
+
+</html>
