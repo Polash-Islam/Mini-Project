@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Page Layout</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
 
-    <header class="sticky-header" role="banner">
-        <nav role="navigation">
+    <header>
+        <button id="menu-toggle">☰</button> <!-- Add a toggle button -->
+        <nav id="menu">
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -19,6 +21,7 @@
             </ul>
         </nav>
     </header>
+
 
     <section id="hero" class="hero-section" role="region" aria-label="Hero Section">
         <div class="hero-content">
@@ -28,34 +31,104 @@
         </div>
     </section>
 
-    <section id="services" class="services-section" role="region" aria-labelledby="services-heading">
-        <h2 id="services-heading">Our Services</h2>
-        <div class="service-card" role="article">
-            <h3>Service 1</h3>
-            <p>Gaming service 1.</p>
+    <section class="main-container">
+        <div class="main-content">
+            <section id="services" class="services-section" role="region" aria-labelledby="services-heading">
+                <h2 id="services-heading">Our Services</h2>
+                <div class="service-card" role="article">
+                    <h3>Service 1</h3>
+                    <p>Gaming service 1.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <h3>Service 2</h3>
+                    <p>Gaming service 2.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <h3>Service 3</h3>
+                    <p>Gaming service 3.</p>
+                </div>
+            </section>
+
+            <section id="cards" class="card-grid-section" role="region" aria-labelledby="cards-heading">
+                <div class="card" role="article">
+                    <h3>Card 1</h3>
+                    <p>Some content here.</p>
+                </div>
+                <div class="card" role="article">
+                    <h3>Card 2</h3>
+                    <p>Some content here.</p>
+                </div>
+                <div class="card" role="article">
+                    <h3>Card 3</h3>
+                    <p>Some content here.</p>
+                </div>
+            </section>
         </div>
-        <div class="service-card" role="article">
-            <h3>Service 2</h3>
-            <p>Gaming service 2.</p>
-        </div>
-        <div class="service-card" role="article">
-            <h3>Service 3</h3>
-            <p>Gaming service 3.</p>
+
+        <aside class="sidebar" role="complementary">
+            <h3>Top Game of 2024</h3>
+            <ul>
+                <li>God of war</li>
+                <li>Assassin's Creed</li>
+                <li>Call of Duty: Black Ops 6</li>
+            </ul>
+        </aside>
+    </section>
+
+
+    <section class="contact">
+        <div class="form-box">
+            <h2>Contact Us</h2>
+            <form action="">
+                <div class="form-item">
+                    <label for="name">Your name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-item">
+                    <label for="email">Your email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-item">
+                    <label for="message">Your message:</label>
+                    <textarea name="message" id="message" cols="30" rows="7"></textarea>
+                </div>
+                <div class="form-item">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
         </div>
     </section>
 
-    <section id="cards" class="card-grid-section" role="region" aria-labelledby="cards-heading">
-        <div class="card" role="article">
-            <h3>Card 1</h3>
-            <p>Some content here.</p>
+
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question">how to install god of war crack?</button>
+            <div class="faq-answer">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker
+                    including versions of Lorem Ipsum.</p>
+            </div>
         </div>
-        <div class="card" role="article">
-            <h3>Card 2</h3>
-            <p>Some content here.</p>
+
+        <div class="faq-item">
+            <button class="faq-question">how to install Batman crack game?</button>
+            <div class="faq-answer">
+                <p>this is the process for install the game.</p>
+            </div>
         </div>
-        <div class="card" role="article">
-            <h3>Card 3</h3>
-            <p>Some content here.</p>
+
+        <div class="faq-item">
+            <button class="faq-question">how to install GTA 6 Online ?</button>
+            <div class="faq-answer">
+                <p>this is the process for install the game.</p>
+            </div>
         </div>
     </section>
 
